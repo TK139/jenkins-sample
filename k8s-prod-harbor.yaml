@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - image: 192.168.100.101/jenkins-demo/jenkins-demo:<BUILD_TAG>
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Never
         name: jenkins-demo
         env:
         - name: branch
