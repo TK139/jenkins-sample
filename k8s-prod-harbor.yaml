@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - image: 192.168.100.101/jenkins-demo/jenkins-demo:<BUILD_TAG>
-        imagePullPolicy: Never
+      imagePullSecrets:
+      - name: my-registry-secret
         name: jenkins-demo
         env:
         - name: branch
