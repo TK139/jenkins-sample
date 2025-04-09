@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - image: tkzero139/jenkins-demo:<BUILD_TAG>
-        imagePullPolicy: Never
+      imagePullSecrets:
+      - name: my-registry-secret
         name: jenkins-demo
         env:
         - name: branch
