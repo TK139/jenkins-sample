@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - image: tkzero139/jenkins-demo:<BUILD_TAG>
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Never
         name: jenkins-demo
         env:
         - name: branch
